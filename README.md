@@ -2,6 +2,12 @@
 
 Demonstrates pagination of Algolia results in Streamlit and on-demand Algolia index updates right from the Streamlit app.
 
+<div align="center">
+    <a href="https://algolia.streamlit.app/">
+        <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit" style="height: 60px !important;width: 217px !important;">
+    </a>
+</div>
+
 **Tech Stack:**
 
 - Streamlit for Python-based UI
