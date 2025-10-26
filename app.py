@@ -23,7 +23,6 @@ from algoliasearch.search.client import SearchClientSync
 from st_supabase_connection import SupabaseConnection
 
 assets_path = Path(__file__).parent.joinpath("assets")
-print(assets_path)
 # =============================================================================
 # STREAMLIT PAGE CONFIGURATION
 # =============================================================================
