@@ -22,14 +22,15 @@ import streamlit as st
 from algoliasearch.search.client import SearchClientSync
 from st_supabase_connection import SupabaseConnection
 
-assets_path = Path(__file__).parent / "assets"
+assets_path = Path(__file__).parent.joinpath("assets")
 # =============================================================================
 # STREAMLIT PAGE CONFIGURATION
 # =============================================================================
 st.set_page_config(page_title="Streamlit + Algolia", page_icon=":material/search:")
 st.title("Streamlit + Algolia")
 st.logo(
-    image=assets_path / "Algolia-logo-white.png", icon_image=assets_path / "algolia-mark-white.png"
+    image=assets_path.joinpath("Algolia-logo-white.png"),
+    icon_image=assets_path.joinpath("algolia-mark-white.png"),
 )
 
 # =============================================================================
@@ -323,7 +324,7 @@ if query:
     # Add Algolia branding at the bottom
     @st.cache_data
     def get_logo_base64():
-        with open(assets_path / "Algolia-logo-white.png", "rb") as f:
+        with open(assets_path.joinpath("Algolia-logo-white.png"), "rb") as f:
             return base64.b64encode(f.read()).decode()
 
     logo_base64 = get_logo_base64()
