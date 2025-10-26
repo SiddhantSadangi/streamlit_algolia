@@ -31,7 +31,7 @@ Implements a book search interface using Streamlit for the UI, Algolia for searc
 Before you begin, ensure you have:
 
 1. **Python 3.10+** installed
-2. An **Algolia account** ([Sign up for free](https://www.algolia.com/users/sign_up))
+2. An **Algolia account** ([Sign up for free](https://www.algolia.com/users/sign_up?utm_source=streamlit_algolia&utm_medium=github&utm_campaign=tutorial))
 3. A **Supabase project** ([Create one here](https://supabase.com/dashboard))
 
 ## 🚀 Step-by-Step Setup Instructions
