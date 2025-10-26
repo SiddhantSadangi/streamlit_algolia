@@ -13,7 +13,6 @@ including on-demand synchronization instead of costly scheduled reindexing.
 Perfect for Streamlit apps that need search capabilities.
 """
 
-
 import base64
 from pathlib import Path
 from typing import Literal
@@ -65,7 +64,7 @@ with st.sidebar:
     with st.expander("Admin panel", icon=":material/settings:"):
         st.write("Add, update, or delete books from the database.")
         # Input fields for book data
-        isbn = st.text_input("Book ISBN")
+        isbn = st.text_input("Book ISBN (required)")
         title = st.text_input("Book Title")
         year = st.number_input("Year of Publication", min_value=1000, max_value=2025, value=2025)
 
