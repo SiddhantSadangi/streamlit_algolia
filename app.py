@@ -31,7 +31,7 @@ st.set_page_config(page_title="Streamlit + Algolia", page_icon=":material/search
 st.title("Streamlit + Algolia")
 st.logo(
     image=assets_path.joinpath("Algolia-logo-white.png"),
-    icon_image=assets_path.joinpath("algolia-mark-white.png"),
+    icon_image=assets_path.joinpath("Algolia-mark-white.png"),
 )
 
 # =============================================================================
