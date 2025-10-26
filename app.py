@@ -13,6 +13,7 @@ including on-demand synchronization instead of costly scheduled reindexing.
 Perfect for Streamlit apps that need search capabilities.
 """
 
+
 import base64
 from pathlib import Path
 from typing import Literal
@@ -76,11 +77,9 @@ with st.sidebar:
             if isbn:
                 # Sync 1: Update Supabase database
                 # By updating only what changes, and when it changes, we avoid costly full reindexing
-                attributes_to_update = {}
+                attributes_to_update = {"ISBN": isbn}
                 if title:
                     attributes_to_update["Book-Title"] = title
-                if isbn:
-                    attributes_to_update["ISBN"] = isbn
                 if year:
                     attributes_to_update["Year-Of-Publication"] = year
 
