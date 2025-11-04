@@ -40,7 +40,7 @@ Before you begin, ensure you have:
 
 ```bash
 # If you have git installed
-git clone <repository-url>
+git clone https://github.com/SiddhantSadangi/streamlit_algolia.git
 cd algolia
 
 # Or download and extract the project folder
